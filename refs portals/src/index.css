@@ -1,0 +1,139 @@
+@import 'tailwindcss/tailwind.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#content {
+  @apply max-w-100rem ml-80 mr-80 mt-36 mb-12 p-20 bg-radial-gradient rounded-lg shadow-md;
+}
+
+header h1 {
+  @apply font-handjet text-center uppercase text-c1e2dd text-shadow-md text-4xl m-0;
+}
+
+header em {
+  @apply font-normal text-blue-500;
+}
+
+header p {
+  @apply text-sm mb-12 text-center text-c6f4f2;
+}
+
+@layer components {
+  .flash-animation {
+    animation: flash 1s infinite;
+  }
+}
+
+@layer utilities {
+
+  .text-shadow-md {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .font-handjet {
+    font-family: 'Handjet', monospace;
+  }
+
+  .text-teal-800 {
+    color: #10655b;
+  }
+
+  .bg-teal-800 {
+    background-color: #12352f;
+  }
+
+  .hover\:bg-teal-900:hover {
+    background-color: #051715;
+  }
+
+  .bg-d7fcf8 {
+    background-color: #d7fcf8;
+  }
+  
+  @keyframes flash {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .bg-radial-gradient {
+    background: radial-gradient(#0b201d, #021619);
+  }
+
+  .border-radial-gradient {
+    border-radius: 16px;
+  }
+
+  .font-handjet {
+    font-family: 'Handjet', monospace;
+  }
+
+  .font-normal {
+    font-style: normal;
+  }
+
+  .text-blue-500 {
+    color: #00eeff;
+  }
+
+  .text-c6f4f2 {
+    color: #c6f4f2;
+  }
+
+  .text-54a399 {
+    color: #54a399;
+  }
+
+  .bg-192f2b {
+    background-color: #192f2b;
+  }
+
+  .text-d1f0ec {
+    color: #d1f0ec;
+  }
+
+  .bg-54a399 {
+    background-color: #54a399;
+  }
+
+  .text-061e1a {
+    color: #061e1a;
+  }
+
+  .from-cyan-400 {
+    background-color: #4df8df;
+  }
+
+  .to-blue-400 {
+    background-color: #4df0f8;
+  }
+
+  .text-gray-800 {
+    color: #221c18;
+  }
+
+  .border-teal-400 {
+    border-color: #46cebe;
+  }
+
+  .bg-teal-800 {
+    background-color: #12352f;
+  }
+
+  .hover\:bg-teal-900:hover {
+    background-color: #051715;
+  }
+}
+
+body {
+  /* Taken from SVGBackgrounds.com */
+  background-color: #004c4c;
+  color: #e1eeeb;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
